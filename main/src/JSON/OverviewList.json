@@ -1,160 +1,162 @@
+{"employees":[
 {
-  "firstfName": "Leon",
-  "lastName": "Müller",
-  "alter": 45,
-  "phoneNumber": "0316 5004020",
-  "E-Mail": "leon.müller@web.com",
-  "department": "CEO"
-}
+  "firstfName":"Leon",
+  "lastName":"Müller",
+  "age":45,
+  "phoneNumber":"0316 5004020",
+  "email":"leon.müller@web.com",
+  "department":"CEO"
+},
 {
-  "firstfName": "Marie",
-  "lastName": "Schmidt",
-  "alter": 34,
-  "phoneNumber": "0316 5004019",
-  "E-Mail": "marie.schmidt@web.com",
-  "department": "Sekretariat"
-}
+  "firstfName":"Marie",
+  "lastName":"Schmidt",
+  "age":34,
+  "phoneNumber":"0316 5004019",
+  "email":"marie.schmidt@web.com",
+  "department":"Sekretariat"
+},
 {
-  "firstfName": "Hannah",
-  "lastName": "Schneider",
-  "alter": 20,
-  "phoneNumber": "0316 5004018",
-  "E-Mail": "hannah.schneider@web.com",
-  "department": "Sekretariat"
-}
+  "firstfName":"Hannah",
+  "lastName":"Schneider",
+  "age":20,
+  "phoneNumber":"0316 5004018",
+  "email":"hannah.schneider@web.com",
+  "department":"Sekretariat"
+},
 {
-  "firstfName": ["Markus", "Thomas"],
-  "lastName": "Fischer",
-  "alter": 50,
-  "phoneNumber": "0316 5004017",
-  "E-Mail": "markus.fischer@web.com",
-  "department": "Einkauf"
-}
+  "firstfName":"Markus-Thomas",
+  "lastName":"Fischer",
+  "age":50,
+  "phoneNumber":"0316 5004017",
+  "email":"markus.fischer@web.com",
+  "department":"Einkauf"
+},
 {
-  "firstfName": "Mia",
-  "lastName": "Meyer",
-  "alter": 21,
-  "phoneNumber": "0316 5004016",
-  "E-Mail": "mia.meyer@web.com",
-  "department": "Verkauf"
-}
+  "firstfName":"Mia",
+  "lastName":"Meyer",
+  "age":21,
+  "phoneNumber":"0316 5004016",
+  "email":"mia.meyer@web.com",
+  "department":"Verkauf"
+},
 {
-  "firstfName": "Daniel",
-  "lastName": "Wagner",
-  "alter": 55,
-  "phoneNumber": "0316 5004015",
-  "E-Mail": "daniel.wagner@web.com",
-  "department": "IT"
-}
+  "firstfName":"Daniel",
+  "lastName":"Wagner",
+  "age":55,
+  "phoneNumber":"0316 5004015",
+  "email":"daniel.wagner@web.com",
+  "department":"IT"
+},
 {
-  "firstfName": "Philipp",
-  "lastName": "Becker",
-  "alter": 43,
-  "phoneNumber": "0316 5004014",
-  "E-Mail": "philipp.becker@web.com",
-  "department": "Einkauf"
-}
+  "firstfName":"Philipp",
+  "lastName":"Becker",
+  "age":43,
+  "phoneNumber":"0316 5004014",
+  "email":"philipp.becker@web.com",
+  "department":"Einkauf"
+},
 {
-  "firstfName": "Michael",
-  "lastName": "Schulz",
-  "alter": 38,
-  "phoneNumber": "0316 5004013",
-  "E-Mail": "michael.schulz@web.com",
-  "department": "Einkauf"
-}
+  "firstfName":"Michael",
+  "lastName":"Schulz",
+  "age":38,
+  "phoneNumber":"0316 5004013",
+  "email":"michael.schulz@web.com",
+  "department":"Einkauf"
+},
 {
-  "firstfName": ["Sofie", "Marie", "Helene"],
-  "lastName": "Hoffmann",
-  "alter": 40,
-  "phoneNumber": "0316 5004012",
-  "E-Mail": "sofie.hoffmann@web.com",
-  "department": "Verkauf"
-}
+  "firstfName":"Sofie Marie Helene",
+  "lastName":"Hoffmann",
+  "age":40,
+  "phoneNumber":"0316 5004012",
+  "email":"sofie.hoffmann@web.com",
+  "department":"Verkauf"
+},
 {
-  "firstfName": "Klara",
-  "lastName": "Schäfer",
-  "alter": 36,
-  "phoneNumber": "0316 5004011",
-  "E-Mail": "klara.schäfer@web.com",
-  "department": "IT"
-}
+  "firstfName":"Klara",
+  "lastName":"Schäfer",
+  "age":36,
+  "phoneNumber":"0316 5004011",
+  "email":"klara.schäfer@web.com",
+  "department":"IT"
+},
 {
-  "firstfName": "Anna",
-  "lastName": "Koch",
-  "alter": 32,
-  "phoneNumber": "0316 5004010",
-  "E-Mail": "anna.koch@web.com",
-  "department": "Verkauf"
-}
+  "firstfName":"Anna",
+  "lastName":"Koch",
+  "age":32,
+  "phoneNumber":"0316 5004010",
+  "email":"anna.koch@web.com",
+  "department":"Verkauf"
+},
 {
-  "firstfName": "Alexander",
-  "lastName": "Bauer",
-  "alter": 28,
-  "phoneNumber": "0316 5004009",
-  "E-Mail": "alexander.bauer@web.com",
-  "department": "Einkauf"
-}
+  "firstfName":"Alexander",
+  "lastName":"Bauer",
+  "age":28,
+  "phoneNumber":"0316 5004009",
+  "email":"alexander.bauer@web.com",
+  "department":"Einkauf"
+},
 {
-  "firstfName": "Lukas",
-  "lastName": "Wolf",
-  "alter": 29,
-  "phoneNumber": "0316 5004008",
-  "E-Mail": "lukas.wolf@web.com",
-  "department": "Verkauf"
-}
+  "firstfName":"Lukas",
+  "lastName":"Wolf",
+  "age":29,
+  "phoneNumber":"0316 5004008",
+  "email":"lukas.wolf@web.com",
+  "department":"Verkauf"
+},
 {
-  "firstfName": "Julian",
-  "lastName": "Neumann",
-  "alter": 47,
-  "phoneNumber": "0316 5004007",
-  "E-Mail": "julian.neumann@web.com",
-  "department": "Verkauf"
-}
+  "firstfName":"Julian",
+  "lastName":"Neumann",
+  "age":47,
+  "phoneNumber":"0316 5004007",
+  "email":"julian.neumann@web.com",
+  "department":"Verkauf"
+},
 {
-  "firstfName": "Maria",
-  "lastName": "Schwarz",
-  "alter": 57,
-  "phoneNumber": "0316 5004006",
-  "E-Mail": "maria.schwarz@web.com",
-  "department": "Verkauf"
-}
+  "firstfName":"Maria",
+  "lastName":"Schwarz",
+  "age":57,
+  "phoneNumber":"0316 5004006",
+  "email":"maria.schwarz@web.com",
+  "department":"Verkauf"
+},
 {
-  "firstfName": "Lisa",
-  "lastName": "Zimmermann",
-  "alter": 33,
-  "phoneNumber": "0316 5004005",
-  "E-Mail": "lisa.zimmermann@web.com",
-  "department": "IT"
-}
+  "firstfName":"Lisa",
+  "lastName":"Zimmermann",
+  "age":33,
+  "phoneNumber":"0316 5004005",
+  "email":"lisa.zimmermann@web.com",
+  "department":"IT"
+},
 {
-  "firstfName": "Jakob",
-  "lastName": "Braun",
-  "alter": 35,
-  "phoneNumber": "0316 5004004",
-  "E-Mail": "jakob.braun@web.com",
-  "department": "Einkauf"
-}
+  "firstfName":"Jakob",
+  "lastName":"Braun",
+  "age":35,
+  "phoneNumber":"0316 5004004",
+  "email":"jakob.braun@web.com",
+  "department":"Einkauf"
+},
 {
-  "firstfName": "Jonas",
-  "lastName": "Krüger",
-  "alter": 26,
-  "phoneNumber": "0316 5004003",
-  "E-Mail": "jonas.krüger@web.com",
-  "department": "Einkauf"
-}
+  "firstfName":"Jonas",
+  "lastName":"Krüger",
+  "age":26,
+  "phoneNumber":"0316 5004003",
+  "email":"jonas.krüger@web.com",
+  "department":"Einkauf"
+},
 {
-  "firstfName": "Katharina",
-  "lastName": "Hofmann",
-  "alter": 49,
-  "phoneNumber": "0316 5004002",
-  "E-Mail": "katharina.hoffmann@web.com",
-  "department": "Verkauf"
-}
+  "firstfName":"Katharina",
+  "lastName":"Hofmann",
+  "age":49,
+  "phoneNumber":"0316 5004002",
+  "email":"katharina.hoffmann@web.com",
+  "department":"Verkauf"
+},
 {
-  "firstfName": "Julia",
-  "lastName": "Schmitt",
-  "alter": 54,
-  "phoneNumber": "0316 5004001",
-  "E-Mail": "´julia.schmitt@web.com",
-  "department": "Verkauf"
+  "firstfName":"Julia",
+  "lastName":"Schmitt",
+  "age":54,
+  "phoneNumber":"0316 5004001",
+  "email":"julia.schmitt@web.com",
+  "department":"Verkauf"
 }
+]}
