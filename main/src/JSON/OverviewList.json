@@ -2,7 +2,7 @@
   {
     "firstfName":"Leon",
     "lastName":"Müller",
-    "age":45,
+    "birthday":"1975-05-12",
     "phoneNumber":"0316 5004020",
     "email":"leon.müller@web.com",
     "department":"CEO",
@@ -12,7 +12,7 @@
   {
     "firstfName":"Marie",
     "lastName":"Schmidt",
-    "age":34,
+    "birthday":"1986-15-06",
     "phoneNumber":"0316 5004019",
     "email":"marie.schmidt@web.com",
     "department":"Sekretariat",
@@ -22,7 +22,7 @@
   {
     "firstfName":"Hannah",
     "lastName":"Schneider",
-    "age":20,
+    "birthday":"2020-19-11",
     "phoneNumber":"0316 5004018",
     "email":"hannah.schneider@web.com",
     "department":"Sekretariat",
@@ -32,7 +32,7 @@
   {
     "firstfName":"Markus-Thomas",
     "lastName":"Fischer",
-    "age":50,
+    "birthday":"1970-10-09",
     "phoneNumber":"0316 5004017",
     "email":"markus.fischer@web.com",
     "department":"Einkauf",
@@ -42,7 +42,7 @@
   {
     "firstfName":"Mia",
     "lastName":"Meyer",
-    "age":21,
+    "birthday":"1999-15-05",
     "phoneNumber":"0316 5004016",
     "email":"mia.meyer@web.com",
     "department":"Verkauf",
@@ -52,7 +52,7 @@
   {
     "firstfName":"Daniel",
     "lastName":"Wagner",
-    "age":55,
+    "birthday":"1965-15-12",
     "phoneNumber":"0316 5004015",
     "email":"daniel.wagner@web.com",
     "department":"IT",
@@ -62,7 +62,7 @@
   {
     "firstfName":"Philipp",
     "lastName":"Becker",
-    "age":43,
+    "birthday":"1977-07-08",
     "phoneNumber":"0316 5004014",
     "email":"philipp.becker@web.com",
     "department":"Einkauf",
@@ -72,7 +72,7 @@
   {
     "firstfName":"Michael",
     "lastName":"Schulz",
-    "age":38,
+    "birthday":"1982-01-01",
     "phoneNumber":"0316 5004013",
     "email":"michael.schulz@web.com",
     "department":"Einkauf",
@@ -82,7 +82,7 @@
   {
     "firstfName":"Sofie Marie Helene",
     "lastName":"Hoffmann",
-    "age":40,
+    "birthday":"1980-27-07",
     "phoneNumber":"0316 5004012",
     "email":"sofie.hoffmann@web.com",
     "department":"Verkauf",
@@ -92,7 +92,7 @@
   {
     "firstfName":"Klara",
     "lastName":"Schäfer",
-    "age":36,
+    "birthday":"1984-20-04",
     "phoneNumber":"0316 5004011",
     "email":"klara.schäfer@web.com",
     "department":"IT",
@@ -102,7 +102,7 @@
   {
     "firstfName":"Anna",
     "lastName":"Koch",
-    "age":32,
+    "birthday":"1988-02-31",
     "phoneNumber":"0316 5004010",
     "email":"anna.koch@web.com",
     "department":"Verkauf",
@@ -112,7 +112,7 @@
   {
     "firstfName":"Alexander",
     "lastName":"Bauer",
-    "age":28,
+    "birthday":"1992-08-17",
     "phoneNumber":"0316 5004009",
     "email":"alexander.bauer@web.com",
     "department":"Einkauf",
@@ -122,7 +122,7 @@
   {
     "firstfName":"Lukas",
     "lastName":"Wolf",
-    "age":29,
+    "birthday":"1991-06-04",
     "phoneNumber":"0316 5004008",
     "email":"lukas.wolf@web.com",
     "department":"Verkauf",
@@ -132,7 +132,7 @@
   {
     "firstfName":"Julian",
     "lastName":"Neumann",
-    "age":47,
+    "birthday":"1973-03-10",
     "phoneNumber":"0316 5004007",
     "email":"julian.neumann@web.com",
     "department":"Verkauf",
@@ -142,7 +142,7 @@
   {
     "firstfName":"Maria",
     "lastName":"Schwarz",
-    "age":57,
+    "birthday":"1963-01-15",
     "phoneNumber":"0316 5004006",
     "email":"maria.schwarz@web.com",
     "department":"Verkauf",
@@ -152,7 +152,7 @@
   {
     "firstfName":"Lisa",
     "lastName":"Zimmermann",
-    "age":33,
+    "birthday":"1987-04-02",
     "phoneNumber":"0316 5004005",
     "email":"lisa.zimmermann@web.com",
     "department":"IT",
@@ -162,17 +162,17 @@
   {
     "firstfName":"Jakob",
     "lastName":"Braun",
-    "age":72,
+    "birthday":"1948-02-12",
     "phoneNumber":"0316 5004004",
     "email":"jakob.braun@web.com",
     "department":"Einkauf",
     "status":"Ausgeschieden",
-    "toDo": ["Meeting mit Kunden", "Angebote Verhandeln"]
+    "toDo": null
   },
   {
     "firstfName":"Jonas",
     "lastName":"Krüger",
-    "age":26,
+    "birthday":"1994-04-04",
     "phoneNumber":"0316 5004003",
     "email":"jonas.krüger@web.com",
     "department":"Einkauf",
@@ -182,7 +182,7 @@
   {
     "firstfName":"Katharina",
     "lastName":"Hofmann",
-    "age":49,
+    "birthday":"1971-16-12",
     "phoneNumber":"0316 5004002",
     "email":"katharina.hoffmann@web.com",
     "department":"Verkauf",
@@ -192,7 +192,7 @@
   {
     "firstfName":"Julia",
     "lastName":"Schmitt",
-    "age":54,
+    "birthday":"1966-06-14",
     "phoneNumber":"0316 5004001",
     "email":"julia.schmitt@web.com",
     "department":"Verkauf",
