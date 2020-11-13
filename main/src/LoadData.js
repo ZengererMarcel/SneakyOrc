@@ -15,6 +15,7 @@ window.addEventListener("load", function(){
 
             for(var row in data.employees) {
                 const tr = document.createElement("tr");
+
                 for(var key in data.employees[row]){
                     const td = document.createElement("td");
 
@@ -32,6 +33,9 @@ window.addEventListener("load", function(){
                         }
                         console.log("--------------------------------")
                         td.textContent = text;
+                    }
+                    if(row % 2 == 1){
+                        td.className = "tableRowGrey";
                     }
                     tr.appendChild(td);
                 }
