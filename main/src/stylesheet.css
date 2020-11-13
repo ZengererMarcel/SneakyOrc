@@ -19,13 +19,17 @@
 .tableHead{
 	width: auto !important;
 	background-color: #B2F797;
+	text-align: left;
+	border: 1.5px solid black;
 }
 
 table{
-	width: 100%;
+	width: 80%;
+	margin: 0 10% 0 10%;
 	border-collapse: collapse;
 }
 
 td, tr{
 	background-color: white;
+	border: 1.5px solid black;
 }
