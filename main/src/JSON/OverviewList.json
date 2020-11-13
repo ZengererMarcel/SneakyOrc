@@ -2,7 +2,7 @@
   {
     "firstfName":"Leon",
     "lastName":"Müller",
-    "birthday":"1975-05-12",
+    "birthday":"1975-12-05",
     "phoneNumber":"0316 5004020",
     "email":"leon.müller@web.com",
     "department":"CEO",
@@ -12,7 +12,7 @@
   {
     "firstfName":"Marie",
     "lastName":"Schmidt",
-    "birthday":"1986-15-06",
+    "birthday":"1986-06-15",
     "phoneNumber":"0316 5004019",
     "email":"marie.schmidt@web.com",
     "department":"Sekretariat",
@@ -22,7 +22,7 @@
   {
     "firstfName":"Hannah",
     "lastName":"Schneider",
-    "birthday":"2020-19-11",
+    "birthday":"2020-11-19",
     "phoneNumber":"0316 5004018",
     "email":"hannah.schneider@web.com",
     "department":"Sekretariat",
@@ -42,7 +42,7 @@
   {
     "firstfName":"Mia",
     "lastName":"Meyer",
-    "birthday":"1999-15-05",
+    "birthday":"1999-05-15",
     "phoneNumber":"0316 5004016",
     "email":"mia.meyer@web.com",
     "department":"Verkauf",
@@ -52,7 +52,7 @@
   {
     "firstfName":"Daniel",
     "lastName":"Wagner",
-    "birthday":"1965-15-12",
+    "birthday":"1965-12-15",
     "phoneNumber":"0316 5004015",
     "email":"daniel.wagner@web.com",
     "department":"IT",
@@ -82,7 +82,7 @@
   {
     "firstfName":"Sofie Marie Helene",
     "lastName":"Hoffmann",
-    "birthday":"1980-27-07",
+    "birthday":"1980-07-27",
     "phoneNumber":"0316 5004012",
     "email":"sofie.hoffmann@web.com",
     "department":"Verkauf",
@@ -92,7 +92,7 @@
   {
     "firstfName":"Klara",
     "lastName":"Schäfer",
-    "birthday":"1984-20-04",
+    "birthday":"1984-04-20",
     "phoneNumber":"0316 5004011",
     "email":"klara.schäfer@web.com",
     "department":"IT",
@@ -102,7 +102,7 @@
   {
     "firstfName":"Anna",
     "lastName":"Koch",
-    "birthday":"1988-02-31",
+    "birthday":"1988-31-02",
     "phoneNumber":"0316 5004010",
     "email":"anna.koch@web.com",
     "department":"Verkauf",
@@ -112,7 +112,7 @@
   {
     "firstfName":"Alexander",
     "lastName":"Bauer",
-    "birthday":"1992-08-17",
+    "birthday":"1992-17-08",
     "phoneNumber":"0316 5004009",
     "email":"alexander.bauer@web.com",
     "department":"Einkauf",
@@ -122,7 +122,7 @@
   {
     "firstfName":"Lukas",
     "lastName":"Wolf",
-    "birthday":"1991-06-04",
+    "birthday":"1991-04-06",
     "phoneNumber":"0316 5004008",
     "email":"lukas.wolf@web.com",
     "department":"Verkauf",
@@ -132,7 +132,7 @@
   {
     "firstfName":"Julian",
     "lastName":"Neumann",
-    "birthday":"1973-03-10",
+    "birthday":"1973-10-03",
     "phoneNumber":"0316 5004007",
     "email":"julian.neumann@web.com",
     "department":"Verkauf",
@@ -142,7 +142,7 @@
   {
     "firstfName":"Maria",
     "lastName":"Schwarz",
-    "birthday":"1963-01-15",
+    "birthday":"1963-15-10",
     "phoneNumber":"0316 5004006",
     "email":"maria.schwarz@web.com",
     "department":"Verkauf",
@@ -182,7 +182,7 @@
   {
     "firstfName":"Katharina",
     "lastName":"Hofmann",
-    "birthday":"1971-16-12",
+    "birthday":"1971-12-16",
     "phoneNumber":"0316 5004002",
     "email":"katharina.hoffmann@web.com",
     "department":"Verkauf",
@@ -192,7 +192,7 @@
   {
     "firstfName":"Julia",
     "lastName":"Schmitt",
-    "birthday":"1966-06-14",
+    "birthday":"1966-14-06",
     "phoneNumber":"0316 5004001",
     "email":"julia.schmitt@web.com",
     "department":"Verkauf",

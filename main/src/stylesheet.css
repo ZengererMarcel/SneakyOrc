@@ -12,9 +12,13 @@
 .body{
 	width: 70%;
 	margin: 0 15% 0 15%;
-	background-color: #B2F797;
 	border-bottom: 3px solid black;
 	overflow-x: auto;
+}
+
+.tableHead{
+	width: auto !important;
+	background-color: #B2F797;
 }
 
 table{
@@ -24,6 +28,6 @@ table{
 	border-right: 1px solid black;
 }
 
-tr, td{
+td, tr{
 	background-color: white;
 }
