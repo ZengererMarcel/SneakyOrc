@@ -1,14 +1,10 @@
-"use strict"; // use strict mode in this script
-
-// more details at https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
-
 // loads after window / page is fully loaded
 window.addEventListener("load", function(){
     // we need a callback function, which will be loaded on ready state changes
     function ajaxCallback(){
 
-        if(this.readyState == 4     // operation is complete
-            && this.status == 200   // successful request/response
+        if(this.readyState == 4
+            && this.status == 200
         ){
             var data = JSON.parse(this.responseText);
             const tableBody = document.querySelector("#table > tbody");
@@ -25,18 +21,24 @@ window.addEventListener("load", function(){
                     else
                     {
                         var text = "";
-                        for(var todo in data.employees[row][key]){
-                            if(todo != 0) {
-                                text += ", ";
-                            }
-                            text += data.employees[row][key][todo];
+                        if(data.employees[row][key] == null){
+                            text = "-";
                         }
-                        console.log("--------------------------------")
+                        else {
+                            for (var todo in data.employees[row][key]) {
+                                if (todo != 0) {
+                                    text += ", ";
+                                }
+                                text += data.employees[row][key][todo];
+                            }
+                        }
                         td.textContent = text;
                     }
+
                     if(row % 2 == 1){
                         td.className = "tableRowGrey";
                     }
+
                     tr.appendChild(td);
                 }
                 tableBody.appendChild(tr);
@@ -45,11 +47,10 @@ window.addEventListener("load", function(){
         }
 
 
-        if(this.readyState == 4     // operation is complete
-            && this.status == 404   // successful request/response
+        if(this.readyState == 4
+            && this.status == 404
         ){
-
-
+            alert("File konnte nicht geladen werden oder ist ungültig");
         }
     }
 

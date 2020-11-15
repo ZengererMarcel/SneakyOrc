@@ -3,22 +3,28 @@
 	font-size: 15px;
 }
 
+body{
+
+}
+
 .heading h1{
-	font-size: 25px !important;
-	background-color: #FF6565;
-	text-align: center;
+	font-size: 50px !important;
+	font-weight: bold;
+	text-indent: 6px;
+	color: #0d5109;
+	width: 1200px;
+	margin: 0 auto 0 auto;
 }
 
 .tableHead{
 	width: auto !important;
-	/*background-color: #B2F797;*/
 	text-align: left;
-	border-bottom: 2px solid red;
+	border-bottom: 3px solid #0d5109;
 }
 
 table{
-	width: 80%;
-	margin: 0 10% 0 10%;
+	width: 1200px;
+	margin: 0 auto 0 auto;
 	border-collapse: collapse;
 	overflow-x: auto;
 }
@@ -26,11 +32,10 @@ table{
 td, tr{
 	background-color: white;
 	border-bottom: 1.5px solid black;
+	text-indent: 6px;
+	line-height: 25px;
 }
 
-td:hover {background-color: #DCDCDC !important;}
-tr:hover {background-color: #DCDCDC !important;};
-
 .tableRowGrey{
-	background-color: #DCDCDC !important;
+	background-color: #e6e6e6 !important;
 }
