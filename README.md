@@ -1,19 +1,22 @@
 # Employee - Management Tool
 
-Website that helps manage employees, made for FH JOANNEUM.
+Website that helps manage employees, made for FH JOANNEUM. Web pages include:
 
-### Overview List
+## Overview List
 > lists all employees<br>
 > basic information such as name, birthdate, phone number, department, etc.<br>
 
-##### Additional features:
+##### Additional features [not implemented yet]:
 
 - [ ] Search fields and filters to easily comb through a lot of data<br>
 - [ ] Use of bookmarks for regularly used searches<br>
 - [ ] Sorting feature
 
 
-### Detail view
+## Add Employee
+> form for adding a new employee to the database
+
+## Detail view [not implemented yet]
 > more detailed information about an employee
 
 
