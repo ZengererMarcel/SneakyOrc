@@ -1,25 +1,30 @@
-*{
+body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15px;
-}
-
-body{
+	
 
 }
+
+
+
+
+
 
 .heading h1{
 	font-size: 50px !important;
 	font-weight: bold;
 	text-indent: 6px;
-	color: #0d5109;
+	color: black;
 	width: 1200px;
-	margin: 0 auto 0 auto;
+	margin: 200 auto 0 auto;
+	padding-top: 50px;
+	text-align: center;
 }
 
 .tableHead{
 	width: auto !important;
 	text-align: left;
-	border-bottom: 3px solid #0d5109;
+	border-bottom: 3px solid #DA1F37;
 }
 
 table{
@@ -38,4 +43,105 @@ td, tr{
 
 .tableRowGrey{
 	background-color: #e6e6e6 !important;
+}
+
+
+
+
+
+
+
+
+ ul > li:hover a {
+    background: #d4002d;
+    color: #fff !important;
+
+
+}
+ul > li.navmenu > a {
+
+list-style-type: none;
+float:left;
+width:300px;
+text-align: center;
+padding-left: 100px;
+
+
+    display: inline-block;
+    line-height: 20px;
+    padding: 30px;
+    color: #272f35;
+    font-size: 14px;
+    transition: none;
+    text-align: center;
+}
+
+a:active, a:hover, a:link, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d4002d;
+}
+
+
+
+
+ul {
+    list-style-type: none;
+}
+
+
+
+.logo {
+	float: left;
+	padding-right: 50px;
+	padding-top: 20px;
+	height: 40px;
+}
+
+#content {
+	padding-top: 70px; 
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+
+
+
+
+.arrow-right {
+
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+
+}
+
+
+nav {
+
+	padding-left: 100px;
+}
+
+
+
+ .breadcrumbbar {
+    background: #384046;
+    height: 50px;
+    size: 100%;
+    top: 90px;
+    right: 0px;
+    left: 0px;
+    padding-left: 150px !important;
+    padding-bottom: 0px;
+
+position: absolute;
+
+    color: #fff;
+    line-height: 20px;
 }
