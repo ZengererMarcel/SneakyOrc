@@ -94,7 +94,7 @@
                 <label class="control-label col-sm-2" for="firstName">Vorname</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" id="firstName" placeholder="Vorname eingeben"
-                           name="firstName">
+                           name="firstName" required>
                 </div>
             </div>
 
@@ -102,7 +102,7 @@
                 <label class="control-label col-sm-2" for="lastName">Nachname</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" id="lastName" placeholder="Nachname eingeben"
-                           name="lastName">
+                           name="lastName" required>
                 </div>
             </div>
 
@@ -110,7 +110,7 @@
             <div class="form-group">
                 <label class="control-label col-sm-2" for="birthday">Geburtsdatum</label>
                 <div class="col-sm-10">
-                    <input type="date" class="form-control" id="birthday" name="birthday">
+                    <input type="date" class="form-control" id="birthday" name="birthday" required>
                 </div>
             </div>
 
@@ -121,7 +121,7 @@
                     <div class="input-group">
                         <span class="input-group-addon">0316 50040-</span>
                         <input id="phoneNumber" type="number" class="form-control" name="msg"
-                               placeholder="Durchwahl eingeben">
+                               placeholder="Durchwahl eingeben" required>
                     </div>
                 </div>
             </div>
@@ -138,7 +138,7 @@
                 <label class="control-label col-sm-2" for="department">Abteilung</label>
                 <div class="col-sm-10">
 
-                    <select class="form-control" id="department">
+                    <select class="form-control" id="department" required>
                         <option value="" disabled selected>Abteilung auswählen</option>
                         <option value="Sekretariat">Sekretariat</option>
                         <option value="Einkauf">Einkauf</option>

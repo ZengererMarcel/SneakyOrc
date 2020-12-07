@@ -9,7 +9,7 @@ body {
 	text-indent: 6px;
 	color: black;
 	width: 1200px;
-	margin: 200 auto 0 auto;
+	margin: 200px auto 0 auto;
 	padding-top: 50px;
 	text-align: center;
 }
@@ -48,14 +48,12 @@ ul > li.navmenu > a {
 	float:left;
 	width:300px;
 	text-align: center;
-	padding-left: 100px;
     display: inline-block;
     line-height: 20px;
     padding: 30px;
-    color: #272f35;
+	color: #272f35;
     font-size: 14px;
     transition: none;
-    text-align: center;
 }
 
 a:active, a:hover, a:link, a:visited {
@@ -78,7 +76,7 @@ ul {
 }
 
 #content {
-	padding-top: 70px; 
+	padding-top: 10px;
 	padding-left: 100px;
 	padding-right: 100px;
 }
@@ -100,12 +98,12 @@ nav {
  .breadcrumbbar {
     background: #384046;
     height: 50px;
-    size: 100%;
+    size: auto;
     top: 90px;
-    right: 0px;
-    left: 0px;
+    right: 0;
+    left: 0;
     padding-left: 150px !important;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 	position: absolute;
     color: #fff;
     line-height: 20px;
