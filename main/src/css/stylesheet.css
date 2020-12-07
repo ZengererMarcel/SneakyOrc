@@ -1,14 +1,7 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15px;
-	
-
 }
-
-
-
-
-
 
 .heading h1{
 	font-size: 50px !important;
@@ -45,28 +38,17 @@ td, tr{
 	background-color: #e6e6e6 !important;
 }
 
-
-
-
-
-
-
-
- ul > li:hover a {
+ul > li:hover a {
     background: #d4002d;
     color: #fff !important;
-
-
 }
+
 ul > li.navmenu > a {
-
-list-style-type: none;
-float:left;
-width:300px;
-text-align: center;
-padding-left: 100px;
-
-
+	list-style-type: none;
+	float:left;
+	width:300px;
+	text-align: center;
+	padding-left: 100px;
     display: inline-block;
     line-height: 20px;
     padding: 30px;
@@ -84,14 +66,9 @@ a:hover {
     color: #d4002d;
 }
 
-
-
-
 ul {
     list-style-type: none;
 }
-
-
 
 .logo {
 	float: left;
@@ -106,29 +83,19 @@ ul {
 	padding-right: 100px;
 }
 
-
-
-
-
 .arrow-right {
 
   border: solid white;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
-
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-
 }
-
 
 nav {
-
 	padding-left: 100px;
 }
-
-
 
  .breadcrumbbar {
     background: #384046;
@@ -139,9 +106,119 @@ nav {
     left: 0px;
     padding-left: 150px !important;
     padding-bottom: 0px;
-
-position: absolute;
-
+	position: absolute;
     color: #fff;
     line-height: 20px;
 }
+
+/* ===================== BOOTSTRAP ===================== 
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .form-control {
+        transition: none
+    }
+}
+
+.form-control::-ms-expand {
+    background-color: transparent;
+    border: 0
+}
+
+.form-control:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #495057
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #6c757d;
+    opacity: 1
+}
+
+.form-control::-moz-placeholder {
+    color: #6c757d;
+    opacity: 1
+}
+
+.form-control:-ms-input-placeholder {
+    color: #6c757d;
+    opacity: 1
+}
+
+.form-control::-ms-input-placeholder {
+    color: #6c757d;
+    opacity: 1
+}
+
+.form-control::placeholder {
+    color: #6c757d;
+    opacity: 1
+}
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: #e9ecef;
+    opacity: 1
+}
+
+input[type=date].form-control, input[type=datetime-local].form-control, input[type=month].form-control, input[type=time].form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+select.form-control:focus::-ms-value {
+    color: #495057;
+    background-color: #fff
+}
+
+.form-group {
+    margin-bottom: 1rem
+}
+
+.col-sm-10 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+.col-sm-10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%
+}
+
+.col-sm-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%
+}
+
+.label{
+	font-size: 20px;
+    font-weight: bold;
+}
+*/
