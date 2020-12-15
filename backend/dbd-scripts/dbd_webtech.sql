@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 11. Dez 2020 um 22:11
+-- Erstellungszeit: 15. Dez 2020 um 18:38
 -- Server-Version: 10.4.14-MariaDB
 -- PHP-Version: 7.2.34
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `departments` (
   `department_id` int(11) NOT NULL,
-  `department_name` varchar(255) NOT NULL
+  `department_name` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -40,14 +40,14 @@ CREATE TABLE `departments` (
 
 CREATE TABLE `employee` (
   `employee_id` int(11) NOT NULL,
-  `first_name` varchar(255) NOT NULL,
-  `last_name` varchar(255) NOT NULL,
+  `first_name` varchar(30) NOT NULL,
+  `last_name` varchar(30) NOT NULL,
   `birth_date` date NOT NULL,
-  `phone_number` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `department` varchar(255) NOT NULL,
-  `status` varchar(255) NOT NULL,
-  `todo` varchar(255) DEFAULT NULL
+  `phone_number` varchar(20) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `department_id` int(11) NOT NULL,
+  `status_id` int(11) NOT NULL,
+  `todo` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -58,7 +58,7 @@ CREATE TABLE `employee` (
 
 CREATE TABLE `status` (
   `status_id` int(11) NOT NULL,
-  `status_description` varchar(255) NOT NULL
+  `status_description` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -77,8 +77,8 @@ ALTER TABLE `departments`
 --
 ALTER TABLE `employee`
   ADD PRIMARY KEY (`employee_id`),
-  ADD KEY `status` (`status`),
-  ADD KEY `department` (`department`);
+  ADD KEY `status_id` (`status_id`),
+  ADD KEY `department_id` (`department_id`);
 
 --
 -- Indizes für die Tabelle `status`
@@ -117,8 +117,8 @@ ALTER TABLE `status`
 -- Constraints der Tabelle `employee`
 --
 ALTER TABLE `employee`
-  ADD CONSTRAINT `employee_ibfk_1` FOREIGN KEY (`status`) REFERENCES `status` (`status_description`),
-  ADD CONSTRAINT `employee_ibfk_2` FOREIGN KEY (`department`) REFERENCES `departments` (`department_name`);
+  ADD CONSTRAINT `employee_ibfk_1` FOREIGN KEY (`status_id`) REFERENCES `status` (`status_id`),
+  ADD CONSTRAINT `employee_ibfk_2` FOREIGN KEY (`department_id`) REFERENCES `departments` (`department_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
