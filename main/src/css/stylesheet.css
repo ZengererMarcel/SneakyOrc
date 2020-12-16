@@ -95,6 +95,11 @@ ul {
 	height: 40px;
 }
 
+#content {
+	padding-top: 6%; 
+	padding-left: 6%;
+	padding-right: 7%;
+}
 
 .arrow-right {
 
