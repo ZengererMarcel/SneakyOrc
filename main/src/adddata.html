@@ -8,9 +8,9 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <script src="js/AddToDo.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="js/AddData.js" defer></script>
 
 
     <link rel="apple-touch-icon" sizes="57x57"
@@ -94,7 +94,7 @@
                 <label class="control-label col-sm-2" for="firstName">Vorname</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" id="firstName" placeholder="Vorname eingeben"
-                           name="firstName" required>
+                           name="firstName" onkeyup="setEmail()" required>
                 </div>
             </div>
 
@@ -102,7 +102,7 @@
                 <label class="control-label col-sm-2" for="lastName">Nachname</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" id="lastName" placeholder="Nachname eingeben"
-                           name="lastName" required>
+                           name="lastName" onkeyup="setEmail()" required>
                 </div>
             </div>
 
@@ -165,7 +165,7 @@
             </div>
 
 
-            <div class="form-group">
+            <div class="form-group" id="divToDo">
                 <label class="control-label col-sm-2" for="toDo">ToDo (max. 5)</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" id="toDo" placeholder="Was muss gemacht werden?"
@@ -175,17 +175,9 @@
 
 
             <div class="form-group">
-                <label class="control-label col-sm-2" for="toDoMore"></label>
+                <label class="control-label col-sm-2" for="divToDo"></label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="toDoMore" placeholder="Was muss gemacht werden?"
-                           name="toDoMore">
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label class="control-label col-sm-2" for="toDoMore"></label>
-                <div class="col-sm-10">
-                    <button type="button" class="btn btn-default">Zeile hinzufügen</button>
+                    <button type="button" onclick="addToDo()" class="btn btn-default">Zeile hinzufügen</button>
                 </div>
             </div>
 
