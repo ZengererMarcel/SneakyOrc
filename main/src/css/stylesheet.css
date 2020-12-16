@@ -8,8 +8,8 @@ body {
 	font-weight: bold;
 	text-indent: 6px;
 	color: black;
-	width: 1200px;
-	margin: 200px auto 0 auto;
+	width: 95%;
+	margin: 200 auto 0 auto;
 	padding-top: 50px;
 	text-align: center;
 }
@@ -21,7 +21,7 @@ body {
 }
 
 table{
-	width: 1200px;
+	width: 95%;
 	margin: 0 auto 0 auto;
 	border-collapse: collapse;
 	overflow-x: auto;
@@ -38,6 +38,8 @@ td, tr{
 	background-color: #e6e6e6 !important;
 }
 
+/* navbar */
+
 ul > li:hover a {
     background: #d4002d;
     color: #fff !important;
@@ -46,14 +48,16 @@ ul > li:hover a {
 ul > li.navmenu > a {
 	list-style-type: none;
 	float:left;
-	width:300px;
+	width: 25%;
 	text-align: center;
+	padding-left: 10%;
     display: inline-block;
     line-height: 20px;
-    padding: 30px;
-	color: #272f35;
+    padding: 2.5%;
+    color: #272f35;
     font-size: 14px;
     transition: none;
+    margin-top: -1.5%;
 }
 
 a:active, a:hover, a:link, a:visited {
@@ -70,15 +74,14 @@ ul {
 
 .logo {
 	float: left;
-	padding-right: 50px;
-	padding-top: 20px;
+	padding-right: 2%;
 	height: 40px;
 }
 
 #content {
-	padding-top: 10px;
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-top: 6%; 
+	padding-left: 6%;
+	padding-right: 7%;
 }
 
 .arrow-right {
@@ -92,21 +95,22 @@ ul {
 }
 
 nav {
-	padding-left: 100px;
+	padding-left: 7%;
 }
 
  .breadcrumbbar {
     background: #384046;
-    height: 50px;
-    size: auto;
-    top: 90px;
-    right: 0;
-    left: 0;
-    padding-left: 150px !important;
-    padding-bottom: 0;
+    height: 8%;
+    size: 100%;
+    top: 15%;
+    right: 0px;
+    left: 0px;
+    padding-left: 11% !important;
+    padding-bottom: 0px;
 	position: absolute;
     color: #fff;
     line-height: 20px;
+    margin-top: -1.5%;
 }
 
 /* ===================== BOOTSTRAP ===================== 
