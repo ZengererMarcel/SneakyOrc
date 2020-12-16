@@ -1,3 +1,18 @@
+@media only screen and (max-width: 600px) {
+  .logo {
+    margin-top: 5% !important;
+    }
+
+    .breadcrumbbar p{
+    margin-top: 7% !important;
+    }
+
+    .heading{
+        padding-top: 30%;
+    }
+
+}
+
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15px;
@@ -14,6 +29,9 @@ body {
 	text-align: center;
 }
 
+.over {
+    overflow-x: auto;
+}
 .tableHead{
 	width: auto !important;
 	text-align: left;
@@ -21,10 +39,9 @@ body {
 }
 
 table{
-	width: 95%;
+	width: 1000px;
 	margin: 0 auto 0 auto;
 	border-collapse: collapse;
-	overflow-x: auto;
 }
 
 td, tr{
@@ -78,11 +95,6 @@ ul {
 	height: 40px;
 }
 
-#content {
-	padding-top: 6%; 
-	padding-left: 6%;
-	padding-right: 7%;
-}
 
 .arrow-right {
 
