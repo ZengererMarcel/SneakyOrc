@@ -1,26 +1,29 @@
+// load mysql module to operate with MySQL database
+const mysql = require("mysql");
+const http = require("http");
 
-window.addEventListener("load", function() {
-    var getParams = function (url) {
-        var params = {};
-        var parser = document.createElement('a');
-        parser.href = url;
-        var query = parser.search.substring(1);
-        if (query.includes('&')) {
-            var vars = query.split('&');
-            for (var i = 0; i < vars.length; i++) {
-                var pair = vars[i].split('=');
-                params[pair[0]] = decodeURIComponent(pair[1]);
-            }
-            return params;
-        } else {
-            return null;
-        }
-    };
+// first we will need a connection, use app-*.sql files to create database and table, and to insert first demo data
+const connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'test',
+});
 
-    var params = getParams(window.location.href);
-
+connection.connect(function (err) {
+    if (err) throw err;
+    console.log("Connected!");
 
 });
+
+const server = http.createServer((request, response));
+
+server.listen(8080, () =>
+    console.log(
+        "Server and Milestones Overview is listening to http://localhost:8080"
+    )
+);
+
 
 
 
