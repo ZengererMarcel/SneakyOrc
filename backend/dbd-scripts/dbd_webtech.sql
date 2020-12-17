@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 15. Dez 2020 um 18:38
+-- Erstellungszeit: 17. Dez 2020 um 14:26
 -- Server-Version: 10.4.14-MariaDB
--- PHP-Version: 7.2.34
+-- PHP-Version: 7.4.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -46,8 +46,18 @@ CREATE TABLE `employee` (
   `phone_number` varchar(20) NOT NULL,
   `email` varchar(50) NOT NULL,
   `department_id` int(11) NOT NULL,
-  `status_id` int(11) NOT NULL,
-  `todo` varchar(100) DEFAULT NULL
+  `status_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `persontodo`
+--
+
+CREATE TABLE `persontodo` (
+  `employee_id` int(11) NOT NULL,
+  `toDo_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -59,6 +69,17 @@ CREATE TABLE `employee` (
 CREATE TABLE `status` (
   `status_id` int(11) NOT NULL,
   `status_description` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `todo`
+--
+
+CREATE TABLE `todo` (
+  `toDo_id` int(11) NOT NULL,
+  `toDo_name` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -81,11 +102,25 @@ ALTER TABLE `employee`
   ADD KEY `department_id` (`department_id`);
 
 --
+-- Indizes für die Tabelle `persontodo`
+--
+ALTER TABLE `persontodo`
+  ADD KEY `persontodo_employee` (`employee_id`),
+  ADD KEY `persontodo_todo` (`toDo_id`);
+
+--
 -- Indizes für die Tabelle `status`
 --
 ALTER TABLE `status`
   ADD PRIMARY KEY (`status_id`),
   ADD UNIQUE KEY `status_description` (`status_description`);
+
+--
+-- Indizes für die Tabelle `todo`
+--
+ALTER TABLE `todo`
+  ADD PRIMARY KEY (`toDo_id`),
+  ADD UNIQUE KEY `toDo_name` (`toDo_name`);
 
 --
 -- AUTO_INCREMENT für exportierte Tabellen
@@ -110,6 +145,12 @@ ALTER TABLE `status`
   MODIFY `status_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT für Tabelle `todo`
+--
+ALTER TABLE `todo`
+  MODIFY `toDo_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- Constraints der exportierten Tabellen
 --
 
@@ -119,6 +160,13 @@ ALTER TABLE `status`
 ALTER TABLE `employee`
   ADD CONSTRAINT `employee_ibfk_1` FOREIGN KEY (`status_id`) REFERENCES `status` (`status_id`),
   ADD CONSTRAINT `employee_ibfk_2` FOREIGN KEY (`department_id`) REFERENCES `departments` (`department_id`);
+
+--
+-- Constraints der Tabelle `persontodo`
+--
+ALTER TABLE `persontodo`
+  ADD CONSTRAINT `persontodo_employee` FOREIGN KEY (`employee_id`) REFERENCES `employee` (`employee_id`),
+  ADD CONSTRAINT `persontodo_todo` FOREIGN KEY (`toDo_id`) REFERENCES `todo` (`toDo_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
