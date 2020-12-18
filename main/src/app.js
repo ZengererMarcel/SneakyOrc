@@ -22,7 +22,6 @@ const formidable = require("formidable");
 //Any node web server application will at some point have to create a web server object. This is done by using [createServer]
 const server = http.createServer((request, response) => {
     const parts = request.url.split("/");
-    const insert = parts.split("?");
 
     if (request.url === "/css/stylesheet.css") {
         sendFile(response, request, "utf8");
@@ -33,13 +32,19 @@ const server = http.createServer((request, response) => {
     else if(request.url === "/js/AddToDo.js"){
         sendFile(response, request, "utf8");
     }
+    else if(request.url === "/js/LoadData.js"){
+        sendFile(response, request, "utf8");
+    }
     else if(request.url === "/JSON/OverviewList.json"){
         sendFile(response, request, "utf8");
     }
-    else if (insert.includes("index.js")) {
-        model
-            .getAll()
-            .then(
+    else if(parts.includes("addData")) {
+        send(response, getAddData());
+    }
+    else if(request.url.includes("index")){
+        model.save(request.url.split("?")[1])
+
+        model.getAll().then(
                 (employee) => {
                     send(response, getList(employee));
                 },
@@ -51,9 +56,6 @@ const server = http.createServer((request, response) => {
             .catch((error) => {
                 console.error("error ", error);
             });
-    }
-     else if(parts.includes("addData")) {
-        send(response, getAddData());
     }
     else
     {
@@ -76,6 +78,6 @@ const server = http.createServer((request, response) => {
 
 server.listen(8080, () =>
     console.log(
-        "Server and Milestones Overview is listening to http://localhost:8080"
+        "Server and OverviewList is listening to http://localhost:8080"
     )
 );

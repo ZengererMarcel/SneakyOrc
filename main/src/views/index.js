@@ -1,7 +1,5 @@
 function getList(employee) {
 
-    addNewEmployee()
-
     return `<!DOCTYPE html>
     <html lang="de">
         <head>
@@ -11,7 +9,6 @@ function getList(employee) {
 
 
                 <link rel="stylesheet" href="/css/stylesheet.css">
-                <script src="/js/LoadData.js" defer></script>
 
                 <link rel="apple-touch-icon" sizes="57x57"
                     href="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/favicons/apple-touch-icon-57x57.png">
@@ -133,12 +130,6 @@ function createRow(employee) {
         <td>${employee.status_description}</td>
         <td>${employee.toDo_name}</td>
     </tr>`;
-}
-
-function addNewEmployee(){
-    
-    let model = require("./model");
-
 }
 
 module.exports = getList;

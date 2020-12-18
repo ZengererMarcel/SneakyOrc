@@ -41,18 +41,31 @@ function getAll() {
 
 // insert a new milestone
 function insert(employee) {
+
+      var getParams = function (url) {
+        var params = {};
+          var vars = url.split("&")
+          for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split('=');
+            params[pair[0]] = decodeURIComponent(pair[1]);
+          }
+          return params;
+      }
+
+      var params = getParams(employee);
+
   return new Promise((resolve, reject) => {
     const query =
       "INSERT INTO employee (first_name, last_name, birth_date, phone_number, email, department_name) VALUES (?,?,?,?,?,?)";
     connection.query(
       query,
       [
-        employee.first_name,
-          employee.last_name,
-          employee.birth_date,
-          employee.phone_number,
-          employee.email,
-          employee.department_name,
+        params["firstName"],
+        params["lastName"],
+        params["birthday"],
+        params["phone_number"],
+        params["email"],
+        params["department"],
       ],
       (error, results) => {
         if (error) {
@@ -70,9 +83,8 @@ function insert(employee) {
 module.exports = {
   getAll,
 
-  save(milestones) {
-    if (!milestones.id) {
-      return insert();
-    }
+  save(url) {
+      insert(url);
+      getAll();
   },
 };
