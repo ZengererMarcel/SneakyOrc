@@ -29,9 +29,6 @@ const server = http.createServer((request, response) => {
     else if(request.url === "/js/AddToDo.js"){
         sendFile(response, request, "utf8");
     }
-    else if(request.url === "/js/LoadData.js"){
-        sendFile(response, request, "utf8");
-    }
     else if(request.url === "/JSON/OverviewList.json"){
         sendFile(response, request, "utf8");
     }
