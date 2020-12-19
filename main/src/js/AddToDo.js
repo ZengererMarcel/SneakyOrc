@@ -14,6 +14,7 @@ function addToDo(){
         div.className = "col-sm-10";
 
         var input = document.createElement("input");
+        input.type = "text";
         input.className = "form-control";
         input.id = `toDo${toDoNumber}`;
         input.placeholder = "Was muss gemacht werden?"
