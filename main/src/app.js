@@ -26,9 +26,6 @@ const server = http.createServer((request, response) => {
     if (request.url === "/css/stylesheet.css") {
         sendFile(response, request, "utf8");
     }
-    else if(request.url === "/css/adding_style.css"){
-        sendFile(response, request, "utf8");
-    }
     else if(request.url === "/js/AddToDo.js"){
         sendFile(response, request, "utf8");
     }
