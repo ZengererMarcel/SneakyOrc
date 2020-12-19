@@ -23,7 +23,7 @@ function addToDo(){
         divToDo.appendChild(div);
     }
     else{
-        alert("Es sind nur 5 toDO's erlaubt");
+        alert("Maximale Anzahl an ToDos erreicht.\nEs sind nur 5 ToDos erlaubt.");
     }
 }
 

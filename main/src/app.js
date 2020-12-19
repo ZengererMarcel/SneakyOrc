@@ -39,10 +39,8 @@ const server = http.createServer((request, response) => {
         send(response, getAddData());
     }
     else if(request.url.includes("index")){
-        console.log("SAVEEEEEEEE");
         model.save(request.url.split("?")[1]).then(
             (a) => {
-                console.log("GEEEEEEEETALLLLLLLLLLL");
                 model.getAll().then(
                     (employee) => {
                         send(response, getList(employee));

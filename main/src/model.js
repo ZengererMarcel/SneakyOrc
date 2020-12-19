@@ -61,7 +61,7 @@ function save(employee) {
 
       params = getParams(employee);
       var email = params["firstName"] + "." + params["lastName"] + "@web.com";
-
+      email = email.toLowerCase();
   return new Promise((resolve, reject) => {
 
       getDepartmentId(params["department"]).then(
@@ -103,10 +103,8 @@ function save(employee) {
 function makeToDo(){
         for (var i = 1; i <= toDONumber; i++) {
             actualToDo = params["toDo" + i];
-            console.log("start: " + actualToDo);
             insertToDo().then(
                 (resolve) => {
-                    console.log("TOOOOOOOOODOOOOOOOOO");
                 },
                 (error) => {
                     console.log(error);
@@ -115,7 +113,7 @@ function makeToDo(){
 
             insertPersonToDo().then(
                 (abc) => {
-                    console.log("PEEEEEEEEEEEEEEEEERRRRRRRRRRON");
+
                 },
                 (error) => {
                     console.log(error);
@@ -146,7 +144,6 @@ function insertEmployee(first, last, birth, phone, email, depart, status){
 }
 
 function insertPersonToDo(){
-    console.log("Person: " + actualToDo);
     return new Promise((resolve, reject) => {
         const query =
             "INSERT INTO persontodo(employee_id, toDo_id) SELECT MAX(a.employee_id) AS employee_id, b.toDo_id FROM employee a, todo b WHERE b.toDo_name = ?";
@@ -168,7 +165,6 @@ function insertPersonToDo(){
 }
 
 function insertToDo(){
-    console.log("TODO: " + actualToDo);
     return new Promise((resolve, reject) => {
         const query =
             "INSERT IGNORE INTO todo (toDo_name) VALUES (?)";
