@@ -1,14 +1,4 @@
 function getAddData() {
-    var employee = {
-        first_name: "",
-        last_name: "",
-        birth_date: "",
-        phone_number: "",
-        email: "",
-        department_name: "",
-        status_description: "",
-        toDo_name: "",
-    };
 
 
     return `<!DOCTYPE html>

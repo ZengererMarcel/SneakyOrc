@@ -7,8 +7,7 @@ function getList(employee) {
             <meta charset="utf-8"/>
             <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-                <link rel="stylesheet" href="/css/stylesheet.css">
+                <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
 
                 <link rel="apple-touch-icon" sizes="57x57"
                     href="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/favicons/apple-touch-icon-57x57.png">
@@ -120,10 +119,22 @@ function getList(employee) {
 
 function createRow(employee) {
 
+    var d = new Date(employee.birth_date);
+    var day = "";
+    if(d.getDate().toString().length<2){
+        day = "0";
+    }
+
+    var month = "";
+    if((d.getMonth() + 1).toString().length<2){
+        month = "0";
+    }
+
+    var date =  day + d.getDate() + "-" + month + (d.getMonth()+1) + "-" + d.getFullYear();
     return `<tr>
         <td>${employee.first_name}</td>
         <td>${employee.last_name}</td>
-        <td>${employee.birth_date}</td>
+        <td>${date}</td>
         <td>${employee.phone_number}</td>
         <td>${employee.email}</td>
         <td>${employee.department_name}</td>
