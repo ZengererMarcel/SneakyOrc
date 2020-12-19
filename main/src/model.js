@@ -104,33 +104,36 @@ function save(employee) {
 function makeToDo(){
         for (var i = 1; i <= toDONumber; i++) {
             actualToDo = params["toDo" + i];
-            var copyToDO = "";
-            for(var i = 0; i < actualToDo.length; i++){
-                if(actualToDo[i] == "+"){
-                    copyToDO = copyToDO + " ";
+
+            if(actualToDo.length > 1) {
+                var copyToDO = "";
+                for (var i = 0; i < actualToDo.length; i++) {
+                    if (actualToDo[i] == "+") {
+                        copyToDO = copyToDO + " ";
+                    } else {
+                        copyToDO = copyToDO + actualToDo[i];
+                    }
                 }
-                else{
-                    copyToDO = copyToDO + actualToDo[i];
-                }
+                actualToDo = copyToDO;
             }
-            actualToDo = copyToDO;
 
-            insertToDo().then(
-                (resolve) => {
-                },
-                (error) => {
-                    console.log(error);
-                }
-            )
+                insertToDo().then(
+                    (resolve) => {
+                    },
+                    (error) => {
+                        console.log(error);
+                    }
+                )
 
-            insertPersonToDo().then(
-                (abc) => {
+                insertPersonToDo().then(
+                    (abc) => {
 
-                },
-                (error) => {
-                    console.log(error);
-                }
-            )
+                    },
+                    (error) => {
+                        console.log(error);
+                    }
+                )
+
         }
 }
 
