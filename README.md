@@ -21,12 +21,15 @@ Website that helps manage employees, made for FH JOANNEUM. Web pages include:
 
 ## How to start the website
 > First you need to start your Apache server and MySQL on Xampp<br>
-> Next you need to install MySQL and Formidable for Node.js in the terminal:<br>
+> Next you need to install MySQL and Formidable for Node.js in the terminal in the SneakyOrc folder:<br>
 >> `npm install mysql`<br>
 >> `npm install formidable`<br>
 
-> Now you can start it with `node app.js`<br>
-> When you open localhost:8080 in your browser you can see the website<br>
+> Now you switch to src folder in the terminal. You can start with `node app.js`<br>
+> When you open `localhost:8080` in your browser you can see the website<br>
+
+>When you get the error: cb() never called then go to this website:
+>https://reactgo.com/npm-err-cb-never-called/
 
 
 ## Known issues
