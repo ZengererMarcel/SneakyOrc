@@ -20,13 +20,21 @@ Website that helps manage employees, made for FH JOANNEUM. Web pages include:
 > more detailed information about an employee
 
 ## How to start the website
-> First you need to start your apache server and mysql on xampp
-> Then you need to install in the therminal mysql and formidable for
-> node js.
-> npm install mysql
-> npm install formidable
-> Now you can start with node app.js
-> When you open localhost:8080 in your Browser you can see the website
+> First you need to start your Apache server and MySQL on Xampp<br>
+> Next you need to install MySQL and Formidable for Node.js in the terminal:<br>
+>> `npm install mysql`<br>
+>> `npm install formidable`<br>
+
+> Now you can start it with `node app.js`<br>
+> When you open localhost:8080 in your browser you can see the website<br>
+
+
+## Known issues
+Only implemented user stories #1 Overview List and #4 Add Data
+- no actual input validation
+- formatting not ideal
+- database starts empty
+
 
 ## Developers
  Antonino Darlene<br>
