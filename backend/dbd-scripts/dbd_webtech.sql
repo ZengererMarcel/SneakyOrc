@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 19. Dez 2020 um 20:11
+-- Erstellungszeit: 19. Dez 2020 um 20:33
 -- Server-Version: 10.4.14-MariaDB
 -- PHP-Version: 7.4.11
 
@@ -106,7 +106,7 @@ CREATE TABLE `todo` (
 --
 DROP TABLE IF EXISTS `employee_disp`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `employee_disp`  AS SELECT `a`.`first_name` AS `first_name`, `a`.`last_name` AS `last_name`, `a`.`birth_date` AS `birth_date`, `a`.`phone_number` AS `phone_number`, `a`.`email` AS `email`, `b`.`department_name` AS `department_name`, `c`.`status_description` AS `status_description`, group_concat(`e`.`toDo_name` separator ', ') AS `toDo_name` FROM ((((`test`.`employee` `a` join `test`.`departments` `b` on(`a`.`department_id` = `b`.`department_id`)) join `test`.`status` `c` on(`a`.`status_id` = `c`.`status_id`)) left join `test`.`persontodo` `d` on(`a`.`employee_id` = `d`.`employee_id`)) left join `test`.`todo` `e` on(`d`.`toDo_id` = `e`.`toDo_id`)) GROUP BY `a`.`employee_id` ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `employee_disp`  AS SELECT `a`.`first_name` AS `first_name`, `a`.`last_name` AS `last_name`, `a`.`birth_date` AS `birth_date`, `a`.`phone_number` AS `phone_number`, `a`.`email` AS `email`, `b`.`department_name` AS `department_name`, `c`.`status_description` AS `status_description`, group_concat(`e`.`toDo_name` separator ', ') AS `toDo_name` FROM ((((`employee` `a` join `departments` `b` on(`a`.`department_id` = `b`.`department_id`)) join `status` `c` on(`a`.`status_id` = `c`.`status_id`)) left join `persontodo` `d` on(`a`.`employee_id` = `d`.`employee_id`)) left join `todo` `e` on(`d`.`toDo_id` = `e`.`toDo_id`)) GROUP BY `a`.`employee_id` ;
 
 --
 -- Indizes der exportierten Tabellen
