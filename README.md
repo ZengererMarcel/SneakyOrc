@@ -28,7 +28,8 @@ Website that helps manage employees, made for FH JOANNEUM. Web pages include:
 Database:
 > Open `localhost/phpmyadmin/` in your browser<br>
 > Create new database: name `dbd_webtech` with UTF8 encoding<br>
-> import `SneakyOrc\backend\dbd-scripts\dbd_webtech.sql`
+> import `SneakyOrc\backend\dbd-scripts\dbd_webtech.sql` to your newly created database<br>
+> you should be able to see some datasets
 
 > Switch to src folder in the terminal: `cd main/src`<br>
 > To start the website: `node app.js`<br>
