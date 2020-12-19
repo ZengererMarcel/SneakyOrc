@@ -20,19 +20,21 @@ Website that helps manage employees, made for FH JOANNEUM. Web pages include:
 > more detailed information about an employee
 
 ## How to start the website
-> First you need to start your Apache server and MySQL on Xampp<br>
-> Next you need to install MySQL and Formidable for Node.js in the terminal in the SneakyOrc folder:<br>
+> Start your Apache server and MySQL on Xampp<br>
+> Install MySQL and Formidable for Node.js in the terminal:<br>
 >> `npm install mysql`<br>
 >> `npm install formidable`<br>
 
-> Open localhost/phpmyadmin/   
-> Create new database: named dbd_webtech  
-> import SneakyOrc\backend\dbd-scripts.sql  
+Database:
+> Open `localhost/phpmyadmin/` in your browser<br>
+> Create new database: name `dbd_webtech` with UTF8 encoding<br>
+> import `SneakyOrc\backend\dbd-scripts\dbd_webtech.sql`
 
-> Now you switch to src folder in the terminal. You can start with `node app.js`<br>
-> When you open `localhost:8080` in your browser you can see the website<br>
+> Switch to src folder in the terminal: `cd main/src`<br>
+> To start the website: `node app.js`<br>
+> Open `localhost:8080` in your browser to access the website<br>
 
->When you get the error: cb() never called then go to this website:
+If you get the error: `cb() never called` then go to this website:
 >https://reactgo.com/npm-err-cb-never-called/S
 
 
@@ -40,7 +42,7 @@ Website that helps manage employees, made for FH JOANNEUM. Web pages include:
 Only implemented user stories #1 Overview List and #4 Add Data
 - no actual input validation
 - formatting not ideal
-- database starts empty
+- need to create database manually
 
 
 ## Developers
