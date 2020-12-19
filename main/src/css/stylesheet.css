@@ -1,10 +1,10 @@
 @media only screen and (max-width: 600px) {
-  .logo {
-    margin-top: 5% !important;
+    .logo {
+        margin-top: 5% !important;
     }
 
     .breadcrumbbar p{
-    margin-top: 7% !important;
+        margin-top: 7% !important;
     }
 
     .heading{
@@ -12,48 +12,48 @@
     }
 
     #content {
-    padding-top: 0% !important; 
-    padding-left: 0% !important;
-    padding-right: 0% !important;
+        padding-top: 0% !important;
+        padding-left: 0% !important;
+        padding-right: 0% !important;
     }
 
 }
 
 .heading h1{
-	font-size: 50px !important;
-	font-weight: bold;
-	text-indent: 6px;
-	color: black;
-	width: 95%;
-	margin: 200 auto 0 auto;
-	padding-top: 50px;
-	text-align: center;
+    font-size: 50px !important;
+    font-weight: bold;
+    text-indent: 6px;
+    color: black;
+    width: 95%;
+    margin: 200 auto 0 auto;
+    padding-top: 50px;
+    text-align: center;
 }
 
 .over {
     overflow-x: auto;
 }
 .tableHead{
-	width: auto !important;
-	text-align: left;
-	border-bottom: 3px solid #DA1F37;
+    width: auto !important;
+    text-align: left;
+    border-bottom: 3px solid #DA1F37;
 }
 
 table{
-	width: 1000px;
-	margin: 0 auto 0 auto;
-	border-collapse: collapse;
+    width: 1000px;
+    margin: 0 auto 0 auto;
+    border-collapse: collapse;
 }
 
 td, tr{
-	background-color: white;
-	border-bottom: 1.5px solid black;
-	text-indent: 6px;
-	line-height: 25px;
+    background-color: white;
+    border-bottom: 1.5px solid black;
+    text-indent: 6px;
+    line-height: 25px;
 }
 
 .tableRowGrey{
-	background-color: #e6e6e6 !important;
+    background-color: #e6e6e6 !important;
 }
 
 /* navbar */
@@ -64,11 +64,11 @@ ul > li:hover a {
 }
 
 ul > li.navmenu > a {
-	list-style-type: none;
-	float:left;
-	width: 25%;
-	text-align: center;
-	padding-left: 10%;
+    list-style-type: none;
+    float:left;
+    width: 25%;
+    text-align: center;
+    padding-left: 10%;
     display: inline-block;
     line-height: 20px;
     padding: 2.5%;
@@ -91,32 +91,32 @@ ul {
 }
 
 .logo {
-	float: left;
-	padding-right: 2%;
-	height: 40px;
+    float: left;
+    padding-right: 2%;
+    height: 40px;
 }
 
 #content {
-    padding-top: 6%; 
+    padding-top: 6%;
     padding-left: 6%;
     padding-right: 7%;
 }
 
 .arrow-right {
 
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
 }
 
 nav {
-	padding-left: 7%;
+    padding-left: 7%;
 }
 
- .breadcrumbbar {
+.breadcrumbbar {
     background: #384046;
     height: 8%;
     size: 100%;
@@ -125,7 +125,7 @@ nav {
     left: 0px;
     padding-left: 11% !important;
     padding-bottom: 0px;
-	position: absolute;
+    position: absolute;
     color: #fff;
     line-height: 20px;
     margin-top: -1.5%;
@@ -240,7 +240,7 @@ select.form-control:focus::-ms-value {
 }
 
 .label{
-	font-size: 20px;
+    font-size: 20px;
     font-weight: bold;
 }
 
