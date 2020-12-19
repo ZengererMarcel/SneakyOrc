@@ -25,11 +25,15 @@ Website that helps manage employees, made for FH JOANNEUM. Web pages include:
 >> `npm install mysql`<br>
 >> `npm install formidable`<br>
 
+> Open localhost/phpmyadmin/ 
+> Create new database: named dbd_webtech
+> import SneakyOrc\backend\dbd-scripts.sql
+
 > Now you switch to src folder in the terminal. You can start with `node app.js`<br>
 > When you open `localhost:8080` in your browser you can see the website<br>
 
 >When you get the error: cb() never called then go to this website:
->https://reactgo.com/npm-err-cb-never-called/
+>https://reactgo.com/npm-err-cb-never-called/S
 
 
 ## Known issues
