@@ -9,6 +9,12 @@ const connection = mysql.createConnection({
   database: "test",
 });
 
+var toDONumber;
+var departmentId;
+var statusId;
+var actualToDo;
+var params;
+
 // initially connect to database
 connection.connect();
 
@@ -40,11 +46,12 @@ function getAll() {
 }
 
 // insert a new milestone
-function insert(employee) {
+function save(employee) {
 
       var getParams = function (url) {
-        var params = {};
+        params = {};
           var vars = url.split("&")
+          toDONumber = vars.length - 6;
           for (var i = 0; i < vars.length; i++) {
             var pair = vars[i].split('=');
             params[pair[0]] = decodeURIComponent(pair[1]);
@@ -52,39 +59,165 @@ function insert(employee) {
           return params;
       }
 
-      var params = getParams(employee);
+      params = getParams(employee);
+      var email = params["firstName"] + "." + params["lastName"] + "@web.com";
 
   return new Promise((resolve, reject) => {
-    const query =
-      "INSERT INTO employee (first_name, last_name, birth_date, phone_number, email, department_name) VALUES (?,?,?,?,?,?)";
-    connection.query(
-      query,
-      [
-        params["firstName"],
-        params["lastName"],
-        params["birthday"],
-        params["phone_number"],
-        params["email"],
-        params["department"],
-      ],
-      (error, results) => {
-        if (error) {
-          console.log(error);
-          reject(error);
-        } else {
-          resolve(results);
-        }
-      }
-    );
+
+      getDepartmentId(params["department"]).then(
+          (Id) => {
+              departmentId = Id[0].department_id;
+          },
+          (error) => {
+              console.log(error);
+          }
+      )
+
+      getStatusId(params["status"]).then(
+          (Id) => {
+              statusId = Id[0].status_id;
+              insertEmployee(params["firstName"],
+                  params["lastName"],
+                  params["birthday"],
+                  params["phoneNumber"],
+                  email,
+                  departmentId,
+                  statusId).then(
+                  (abc) => {
+                      makeToDo();
+                      resolve(abc);
+                  },
+                  (error) => {
+                      console.log(error);
+                      reject(error);
+                  }
+              )
+          },
+          (error) => {
+              console.log(error);
+          }
+      )
   });
 }
 
+function makeToDo(){
+        for (var i = 1; i <= toDONumber; i++) {
+            actualToDo = params["toDo" + i];
+            console.log("start: " + actualToDo);
+            insertToDo().then(
+                (resolve) => {
+                    console.log("TOOOOOOOOODOOOOOOOOO");
+                },
+                (error) => {
+                    console.log(error);
+                }
+            )
+
+            insertPersonToDo().then(
+                (abc) => {
+                    console.log("PEEEEEEEEEEEEEEEEERRRRRRRRRRON");
+                },
+                (error) => {
+                    console.log(error);
+                }
+            )
+        }
+}
+
+function insertEmployee(first, last, birth, phone, email, depart, status){
+    return new Promise((resolve, reject) => {
+        const query =
+            "INSERT INTO employee (first_name, last_name, birth_date, phone_number, email, department_id, status_id) VALUES (?,?,?,?,?,?,?)";
+        connection.query(
+            query,
+            [
+                first, last, birth, phone, email, depart, status,
+            ],
+            (error, results) => {
+                if (error) {
+                    console.log(error);
+                    reject(error);
+                } else {
+                    resolve(results);
+                }
+            }
+        );
+    });
+}
+
+function insertPersonToDo(){
+    console.log("Person: " + actualToDo);
+    return new Promise((resolve, reject) => {
+        const query =
+            "INSERT INTO persontodo(employee_id, toDo_id) SELECT MAX(a.employee_id) AS employee_id, b.toDo_id FROM employee a, todo b WHERE b.toDo_name = ?";
+        connection.query(
+            query,
+            [
+                actualToDo,
+            ],
+            (error, results) => {
+                if (error) {
+                    console.log(error);
+                    reject(error);
+                } else {
+                    resolve(results);
+                }
+            }
+        );
+    });
+}
+
+function insertToDo(){
+    console.log("TODO: " + actualToDo);
+    return new Promise((resolve, reject) => {
+        const query =
+            "INSERT IGNORE INTO todo (toDo_name) VALUES (?)";
+        connection.query(
+            query,
+            [
+                actualToDo,
+            ],
+            (error, results) => {
+                if (error) {
+                    //console.log(error);
+                    reject(error);
+                } else {
+                    resolve(results);
+                }
+            }
+        );
+    });
+}
+
+function getDepartmentId(department){
+    return new Promise((resolve, reject) => {
+        const query = "SELECT department_id FROM departments WHERE department_name = ?";
+        connection.query(query, [department,], (error, results) => {
+            if (error) {
+                reject(error);
+            } else {
+                resolve(results);
+            }
+        })
+    });
+}
+
+function getStatusId(status){
+    return new Promise((resolve, reject) => {
+        const query = "SELECT status_id FROM status WHERE status_description = ?";
+        connection.query(query, [status,], (error, results) => {
+            if (error) {
+                reject(error);
+            } else {
+                resolve(results);
+            }
+        })
+    });
+}
 
 module.exports = {
   getAll,
-
-  save(url) {
-      insert(url);
-      getAll();
+  save(url){
+      return save(url);
   },
 };

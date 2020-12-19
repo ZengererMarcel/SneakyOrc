@@ -141,7 +141,7 @@ function getAddData() {
             <div class="form-group">
                 <label class="control-label col-sm-2" for="email">Email</label>
                 <div class="col-sm-10">
-                    <input class="form-control" id="email" type="text" placeholder="Email wird automatisch generiert"
+                    <input class="form-control" id="email" name="email" type="text" placeholder="Email wird automatisch generiert"
                            disabled>
                 </div>
             </div>
@@ -150,7 +150,7 @@ function getAddData() {
                 <label class="control-label col-sm-2" for="department">Abteilung</label>
                 <div class="col-sm-10">
 
-                    <select class="form-control" id="department" required>
+                    <select class="form-control" id="department" name="department" required>
                         <option value="" disabled selected>Abteilung auswählen</option>
                         <option value="Sekretariat">Sekretariat</option>
                         <option value="Einkauf">Einkauf</option>
@@ -178,10 +178,10 @@ function getAddData() {
 
 
             <div class="form-group" id="divToDo">
-                <label class="control-label col-sm-2" for="toDo">ToDo (max. 5)</label>
+                <label class="control-label col-sm-2" for="toDo1">ToDo (max. 5)</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="toDo" placeholder="Was muss gemacht werden?"
-                           name="toDo">
+                    <input type="text" class="form-control" id="toDo1" placeholder="Was muss gemacht werden?"
+                           name="toDo1">
                 </div>
             </div>
 

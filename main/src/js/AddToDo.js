@@ -1,7 +1,7 @@
 var toDoNumber = 1;
 
 function addToDo(){
-    if(toDoNumber == 5) {
+    if(toDoNumber != 5) {
         toDoNumber += 1;
         var divToDo = document.getElementById("divToDo");
 

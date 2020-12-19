@@ -42,20 +42,27 @@ const server = http.createServer((request, response) => {
         send(response, getAddData());
     }
     else if(request.url.includes("index")){
-        model.save(request.url.split("?")[1])
-
-        model.getAll().then(
-                (employee) => {
-                    send(response, getList(employee));
-                },
-                //(error) => send(response, error)
-                (error) => {
-                    send(response, getError(error));
-                }
-            )
-            .catch((error) => {
-                console.error("error ", error);
-            });
+        console.log("SAVEEEEEEEE");
+        model.save(request.url.split("?")[1]).then(
+            (a) => {
+                console.log("GEEEEEEEETALLLLLLLLLLL");
+                model.getAll().then(
+                    (employee) => {
+                        send(response, getList(employee));
+                    },
+                    //(error) => send(response, error)
+                    (error) => {
+                        send(response, getError(error));
+                    }
+                )
+                    .catch((error) => {
+                        console.error("error ", error);
+                    });
+            },
+            (error) => {
+                console.log(error);
+            }
+    )
     }
     else
     {
