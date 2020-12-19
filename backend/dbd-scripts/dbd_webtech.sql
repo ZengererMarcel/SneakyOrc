@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 19. Dez 2020 um 21:44
+-- Erstellungszeit: 19. Dez 2020 um 22:14
 -- Server-Version: 10.4.14-MariaDB
--- PHP-Version: 7.2.34
+-- PHP-Version: 7.4.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -159,9 +159,9 @@ CREATE TABLE `todo` (
 INSERT INTO `todo` (`toDo_id`, `toDo_name`) VALUES
 (4, ''),
 (3, 'Kundengespräche'),
-(2, 'Marketing+Meeting'),
-(1, 'Meeting+mit+Mitarbeiter'),
-(10, 'Telefonat+mit+Chefin'),
+(2, 'Marketing Meeting'),
+(1, 'Meeting mit Mitarbeiter'),
+(10, 'Telefonat mit Chefin'),
 (6, 'Telefonate');
 
 -- --------------------------------------------------------

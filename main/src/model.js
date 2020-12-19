@@ -62,6 +62,7 @@ function save(employee) {
       params = getParams(employee);
       var email = params["firstName"] + "." + params["lastName"] + "@web.com";
       email = email.toLowerCase();
+
   return new Promise((resolve, reject) => {
 
       getDepartmentId(params["department"]).then(
@@ -103,6 +104,17 @@ function save(employee) {
 function makeToDo(){
         for (var i = 1; i <= toDONumber; i++) {
             actualToDo = params["toDo" + i];
+            var copyToDO = "";
+            for(var i = 0; i < actualToDo.length; i++){
+                if(actualToDo[i] == "+"){
+                    copyToDO = copyToDO + " ";
+                }
+                else{
+                    copyToDO = copyToDO + actualToDo[i];
+                }
+            }
+            actualToDo = copyToDO;
+
             insertToDo().then(
                 (resolve) => {
                 },
