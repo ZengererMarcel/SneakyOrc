@@ -129,13 +129,14 @@ function createRow(employee) {
     if((d.getMonth() + 1).toString().length<2){
         month = "0";
     }
-
     var date =  day + d.getDate() + "-" + month + (d.getMonth()+1) + "-" + d.getFullYear();
+
+    var phoneNumber = "0316 50040-" + employee.phone_number;
     return `<tr>
         <td>${employee.first_name}</td>
         <td>${employee.last_name}</td>
         <td>${date}</td>
-        <td>${employee.phone_number}</td>
+        <td>${phoneNumber}</td>
         <td>${employee.email}</td>
         <td>${employee.department_name}</td>
         <td>${employee.status_description}</td>
