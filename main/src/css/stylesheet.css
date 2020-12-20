@@ -12,9 +12,9 @@
     }
 
     #content {
-        padding-top: 0% !important;
-        padding-left: 0% !important;
-        padding-right: 0% !important;
+        padding-top: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 
 }
@@ -25,7 +25,6 @@
     text-indent: 6px;
     color: black;
     width: 95%;
-    margin: 200 auto 0 auto;
     padding-top: 50px;
     text-align: center;
 }
@@ -68,7 +67,6 @@ ul > li.navmenu > a {
     float:left;
     width: 25%;
     text-align: center;
-    padding-left: 10%;
     display: inline-block;
     line-height: 20px;
     padding: 2.5%;
@@ -119,12 +117,11 @@ nav {
 .breadcrumbbar {
     background: #384046;
     height: 8%;
-    size: 100%;
     top: 15%;
-    right: 0px;
-    left: 0px;
+    right: 0;
+    left: 0;
     padding-left: 11% !important;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     position: absolute;
     color: #fff;
     line-height: 20px;
@@ -255,7 +252,6 @@ button {
 }
 
 button:focus {
-    outline: 1px dotted;
     outline: 5px auto -webkit-focus-ring-color
 }
 
