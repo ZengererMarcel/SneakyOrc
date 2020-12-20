@@ -176,7 +176,7 @@ function getAddData() {
 
 
             <div class="form-group">
-                <label class="control-label col-sm-2" for="divToDo"></label>
+                <label class="control-label col-sm-2"></label>
                 <div class="col-sm-10">
                     <button type="button" onclick="addToDo()" class="btn btn-default">Zeile hinzufügen</button>
                 </div>
