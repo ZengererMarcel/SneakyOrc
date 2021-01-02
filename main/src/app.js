@@ -13,6 +13,7 @@ const redirect = helper.redirect;
 // creates Overview List with HTML
 const getList = require("./views/index");
 const getAddData = require("./views/adddata");
+const saveValues = require("./views/save");
 
 // load additional module formidable, A Node.js module for parsing form data
 // more details at https://www.npmjs.com/package/formidable
@@ -40,7 +41,7 @@ const server = http.createServer((request, response) => {
             (a) => {
                 model.getAll().then(
                     (employee) => {
-                        send(response, getList(employee));
+                        send(response, saveValues());
                     },
                     //(error) => send(response, error)
                     (error) => {
