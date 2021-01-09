@@ -8,6 +8,10 @@ function getList(employee) {
             <meta name="viewport" content="width=device-width, initial-scale=1">
 
                 <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+                    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+                <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+                    rel="stylesheet">
 
                 <link rel="apple-touch-icon" sizes="57x57"
                     href="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/favicons/apple-touch-icon-57x57.png">
@@ -17,66 +21,64 @@ function getList(employee) {
                     href="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/favicons/apple-touch-icon-72x72.png">
                 <link rel="apple-touch-icon" sizes="76x76"
                     href="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/favicons/apple-touch-icon-76x76.png">
-                <link rel="apple-touch-icon" sizes="114x114"
-                                          href="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/favicons/apple-touch-icon-114x114.png">
-                                        <link rel="apple-touch-icon" sizes="120x120"
-                                              href="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/favicons/apple-touch-icon-120x120.png">
-                                            <link rel="apple-touch-icon" sizes="144x144"
-                                                  href="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/favicons/apple-touch-icon-144x144.png">
-                                                <link rel="apple-touch-icon" sizes="152x152"
-                                                      href="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/favicons/apple-touch-icon-152x152.png">
-                                                    <link rel="apple-touch-icon" sizes="180x180"
-                                                          href="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/favicons/apple-touch-icon-180x180.png">
-
-                                                        <link rel="icon" type="image/png"
-                                                              href="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/favicons/favicon-192x192.png"
-                                                              sizes="192x192">
-                                                            <link rel="icon" type="image/png"
-                                                                  href="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/favicons/favicon-16x16.png"
-                                                                  sizes="16x16">
-                                                                <link rel="icon" type="image/png"
-                                                                      href="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/favicons/favicon-32x32.png"
-                                                                      sizes="32x32">
-                                                                    <link rel="icon" type="image/png"
-                                                                          href="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/favicons/favicon-96x96.png"
-                                                                          sizes="96x96">
-                                                                        <link rel="icon" type="image/png"
-                                                                              href="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/favicons/favicon-160x160.png"
-                                                                              sizes="160x160">
+                <link rel="apple-touch-icon" sizes="114x114" 
+                    href="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/favicons/apple-touch-icon-114x114.png">
+                <link rel="apple-touch-icon" sizes="120x120" 
+                    href="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/favicons/apple-touch-icon-120x120.png">
+                <link rel="apple-touch-icon" sizes="144x144" 
+                    href="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/favicons/apple-touch-icon-144x144.png">
+                <link rel="apple-touch-icon" sizes="152x152" 
+                    href="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/favicons/apple-touch-icon-152x152.png">
+                <link rel="apple-touch-icon" sizes="180x180" 
+                    href="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/favicons/apple-touch-icon-180x180.png">
+                <link rel="icon" type="image/png" 
+                    href="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/favicons/favicon-192x192.png" 
+                    sizes="192x192">
+                <link rel="icon" type="image/png" 
+                    href="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/favicons/favicon-16x16.png" 
+                    sizes="16x16">
+                <link rel="icon" type="image/png" 
+                    href="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/favicons/favicon-32x32.png" 
+                    sizes="32x32">
+                <link rel="icon" type="image/png" 
+                    href="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/favicons/favicon-96x96.png" 
+                    sizes="96x96">
+                <link rel="icon" type="image/png" 
+                    href="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/favicons/favicon-160x160.png" 
+                    sizes="160x160">
 
 
         </head>
 
         <body>
 
-
-            <nav class="navbar">
-
-                <img class="logo"
-                     src="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/logo_fh_2_color.svg"
-                     alt="FH JOANNEUM Logo" title="FH JOANNEUM Logo">
-                    <ul class="nav-first-floor">
-
-                        <li class="navmenu">
-                            <a href="/">Overview</a>
-                        </li>
-
-                        <li class="navmenu">
-                            <a href="/addData" class="">
-                                Mitarbeiter hinzufügen
-                            </a>
-
-                        </li>
-                    </ul>
-            </nav>
+    <div class="container">
 
 
-            <div class="breadcrumbbar">
+<nav class="navbar navbar-expand-md navbar-light">
+            <a href="/" class="navbar-brand">
+                <img class="logo" src="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/logo_fh_2_color.svg" width="140" height="60" alt="Logo-Fh-Joanneum">
+            </a>
+            
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="/" class="nav-link">Mitarbeiterliste</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/addData" class="nav-link">Mitarbeiter hinzufügen</a>
+                    </li>
+                </ul>
+        </nav>
+    </div>
 
-                <p>FH JOANNEUM > Overview</p>
-
-
-            </div>
+    <div class="breadcrumb bg-dark">
+        <div class="container">
+            <ul>
+                <li><a href="/">FH JOANNEUM</a></li>
+                <li><a href="/">Mitarbeiterliste</a></li>
+            </ul>
+        </div>
+    </div>
 
 
             <div id="content">
@@ -121,15 +123,15 @@ function createRow(employee) {
 
     var d = new Date(employee.birth_date);
     var day = "";
-    if(d.getDate().toString().length<2){
+    if (d.getDate().toString().length < 2) {
         day = "0";
     }
 
     var month = "";
-    if((d.getMonth() + 1).toString().length<2){
+    if ((d.getMonth() + 1).toString().length < 2) {
         month = "0";
     }
-    var date =  day + d.getDate() + "-" + month + (d.getMonth()+1) + "-" + d.getFullYear();
+    var date = day + d.getDate() + "-" + month + (d.getMonth() + 1) + "-" + d.getFullYear();
 
     var phoneNumber = "0316 50040-" + employee.phone_number;
     return `<tr>
