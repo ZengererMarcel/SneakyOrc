@@ -11,7 +11,7 @@ function addToDo(){
         divToDo.appendChild(label);
 
         var div = document.createElement("div");
-        div.className = "col-sm-10";
+        div.className = "col-sm-12 col-12 col-s-12";
 
         var input = document.createElement("input");
         input.type = "text";
