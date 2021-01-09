@@ -9,6 +9,7 @@ const connection = mysql.createConnection({
   database: "dbd_webtech",
 });
 
+var toDos = [];
 var toDONumber;
 var departmentId;
 var statusId;
@@ -101,40 +102,45 @@ function save(employee) {
   });
 }
 
-function makeToDo(){
-        for (var i = 1; i <= toDONumber; i++) {
-            actualToDo = params["toDo" + i];
+function makeToDo() {
+    for (var i = 1; i <= toDONumber; i++) {
+        actualToDo = params["toDo" + i];
 
-            if(actualToDo.length > 1) {
-                var copyToDO = "";
-                for (var i = 0; i < actualToDo.length; i++) {
-                    if (actualToDo[i] == "+") {
-                        copyToDO = copyToDO + " ";
-                    } else {
-                        copyToDO = copyToDO + actualToDo[i];
-                    }
+        if (actualToDo.length > 1) {
+            var copyToDO = "";
+            for (var i = 0; i < actualToDo.length; i++) {
+                if (actualToDo[i] == "+") {
+                    copyToDO = copyToDO + " ";
+                } else {
+                    copyToDO = copyToDO + actualToDo[i];
                 }
-                actualToDo = copyToDO;
             }
-
-                insertToDo().then(
-                    (resolve) => {
-                    },
-                    (error) => {
-                        console.log(error);
-                    }
-                )
-
-                insertPersonToDo().then(
-                    (abc) => {
-
-                    },
-                    (error) => {
-                        console.log(error);
-                    }
-                )
-
+            params["toDo" + i] = copyToDO;
         }
+    }
+
+    for (let i = 0; i < toDONumber; i++) {
+        toDos[i] = params["toDo" + (i + 1)];
+    }
+
+    if(toDos[0].length != 0) {
+        insertToDo().then(
+            (resolve) => {
+            },
+            (error) => {
+                console.log(error);
+            }
+        )
+
+        insertPersonToDo().then(
+            (abc) => {
+
+            },
+            (error) => {
+                console.log(error);
+            }
+        )
+    }
 }
 
 function insertEmployee(first, last, birth, phone, email, depart, status){
@@ -160,13 +166,18 @@ function insertEmployee(first, last, birth, phone, email, depart, status){
 
 function insertPersonToDo(){
     return new Promise((resolve, reject) => {
-        const query =
+        let query =
             "INSERT INTO persontodo(employee_id, toDo_id) SELECT MAX(a.employee_id) AS employee_id, b.toDo_id FROM employee a, todo b WHERE b.toDo_name = ?";
+
+        for(let i = 1; i < toDONumber; i++){
+            query = query + " OR b.toDo_name = ?";
+        }
+
+        query = query + "GROUP BY b.toDo_id";
+
         connection.query(
             query,
-            [
-                actualToDo,
-            ],
+            toDos,
             (error, results) => {
                 if (error) {
                     console.log(error);
@@ -181,13 +192,15 @@ function insertPersonToDo(){
 
 function insertToDo(){
     return new Promise((resolve, reject) => {
-        const query =
+        let query =
             "INSERT IGNORE INTO todo (toDo_name) VALUES (?)";
+
+        for(let i = 1; i < toDONumber; i++){
+            query = query + ",(?)";
+        }
         connection.query(
             query,
-            [
-                actualToDo,
-            ],
+            toDos,
             (error, results) => {
                 if (error) {
                     //console.log(error);
