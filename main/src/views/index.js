@@ -2,10 +2,12 @@ function getList(employee) {
 
     return `<!DOCTYPE html>
     <html lang="de">
-        <head>
+        <head id="head">
             <title>Overview Mitarbeiter</title>
             <meta charset="utf-8"/>
             <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <script src="../js/print.js" defer></script>
 
                 <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
@@ -57,7 +59,7 @@ function getList(employee) {
 
 <nav class="navbar navbar-expand-md navbar-light">
             <a href="/" class="navbar-brand">
-                <img class="logo" src="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/logo_fh_2_color.svg" width="140" height="60" alt="Logo-Fh-Joanneum">
+                <img class="logo" id="logo" src="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/logo_fh_2_color.svg" width="140" height="60" alt="Logo-Fh-Joanneum">
             </a>
             
                 <ul class="navbar-nav mr-auto">
@@ -84,7 +86,7 @@ function getList(employee) {
             <div id="content">
 
 
-                <div class="heading">
+                <div class="heading" id="heading">
                     <h1>Mitarbeiterliste</h1>
                 </div>
                 <br>
@@ -115,6 +117,7 @@ function getList(employee) {
 
                     </div>
             </div>
+            <button onclick="printData()">Test</button>
         </body>
     </html>`;
 }
