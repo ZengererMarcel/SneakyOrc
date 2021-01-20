@@ -15,6 +15,10 @@ function getList(employee) {
                 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
                     rel="stylesheet">
 
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
                 <link rel="apple-touch-icon" sizes="57x57"
                     href="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/favicons/apple-touch-icon-57x57.png">
                 <link rel="apple-touch-icon" sizes="60x60"
@@ -90,8 +94,14 @@ function getList(employee) {
                     <h1>Mitarbeiterliste</h1>
                 </div>
                 <br>
+                
                     <div class="over">
+                    <a href="" onclick="printData()" class="btn btn-default"><i class="fa fa-print fa-2x"></i></a>
+                    <br>
+                    
                         <table id="table">
+                        
+                        
                             <thead>
                                 <tr>
                                     <th class="tableHead">Vorname</th>
@@ -114,10 +124,10 @@ function getList(employee) {
                             <br>
                                 <p>Für diese Website benötigen Sie JavaScript.</p>
                         </noscript>
-
+                        
                     </div>
             </div>
-            <button onclick="printData()">Test</button>
+            
         </body>
     </html>`;
 }
