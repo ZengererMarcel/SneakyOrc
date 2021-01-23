@@ -11,12 +11,10 @@ body {
 
 }
 
-/* @global: navigation bar */
-.navbar {
-    align-items: stretch;
-    padding-top: 0;
-    padding-bottom: 0;
+.container{
+    margin-bottom:0;
 }
+/* @global: navigation bar */
 
 .navbar-light .navbar-nav .nav-link {
     display: flex;
@@ -29,18 +27,22 @@ body {
 .navbar-light .navbar-nav .nav-link:hover {
     background-color: #d4002d;
     color: white !important;
+   
 }
 
-.navbar-light .navbar-brand:focus,
-.navbar-light .navbar-brand:hover {
-    background-color: whitesmoke;
+ .navbar-light  .navbar-brand:focus,
+.navbar-light  .navbar-brand:hover {
+    /*background-color: whitesmoke;*/
     color: white !important;
+    opacity:0.5;
+    
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
     background-color: #d4002d;
     color: white !important;
+ 
 }
 
 /* @global: breadcrumb bar */
@@ -48,6 +50,7 @@ body {
     line-height: 1;
     margin: 0;
     padding: 0;
+
 }
 
 .breadcrumb ul {

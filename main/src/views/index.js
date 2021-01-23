@@ -61,20 +61,20 @@ function getList(employee) {
     <div class="container">
 
 
-<nav class="navbar navbar-expand-md navbar-light">
-            <a href="/" class="navbar-brand">
-                <img class="logo" id="logo" src="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/logo_fh_2_color.svg" width="140" height="60" alt="Logo-Fh-Joanneum">
-            </a>
-            
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a href="/" class="nav-link">Mitarbeiterliste</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/addData" class="nav-link">Mitarbeiter hinzufügen</a>
-                    </li>
-                </ul>
-        </nav>
+        <nav class="navbar navbar-expand-md navbar-light">
+                    <a href="/" class="navbar-brand">
+                        <img class="logo" id="logo" src="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/logo_fh_2_color.svg" width="170" height="100" alt="Logo-Fh-Joanneum">
+                    </a>
+                    
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a href="/" class="nav-link">Mitarbeiterliste</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/addData" class="nav-link">Mitarbeiter hinzufügen</a>
+                            </li>
+                        </ul>
+                </nav>
     </div>
 
     <div class="breadcrumb bg-dark">
@@ -98,27 +98,27 @@ function getList(employee) {
                     <div class="over">
                     <a href="" onclick="printData()" class="btn btn-default"><i class="fa fa-print fa-2x"></i></a>
                     <br>
-                    
-                        <table id="table">
-                        
-                        
-                            <thead>
-                                <tr>
-                                    <th class="tableHead">Vorname</th>
-                                    <th class="tableHead">Nachname</th>
-                                    <th class="tableHead">Geburtsdatum</th>
-                                    <th class="tableHead">Telefonnummer</th>
-                                    <th class="tableHead">E-Mail</th>
-                                    <th class="tableHead">Abteilung</th>
-                                    <th class="tableHead">Status</th>
-                                    <th class="tableHead">ToDo</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                    ${employee.map(createRow).join('')}
-                            </tbody>
-                        </table>
-
+                        <div style="overflow-x:auto;">
+                            <table id="table">
+                            
+                            
+                                <thead>
+                                    <tr>
+                                        <th class="tableHead">Vorname</th>
+                                        <th class="tableHead">Nachname</th>
+                                        <th class="tableHead">Geburtsdatum</th>
+                                        <th class="tableHead">Telefonnummer</th>
+                                        <th class="tableHead">E-Mail</th>
+                                        <th class="tableHead">Abteilung</th>
+                                        <th class="tableHead">Status</th>
+                                        <th class="tableHead">ToDo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        ${employee.map(createRow).join('')}
+                                </tbody>
+                            </table>
+                        </div>
 
                         <noscript>
                             <br>

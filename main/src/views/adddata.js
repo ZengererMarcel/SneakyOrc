@@ -181,7 +181,7 @@ function getAddData() {
 
             <div class="form-group">
                 <div class="col-sm-12 col-12">
-                    <button type="button" onclick="addToDo()" class="btn btn-default">Zeile hinzufügen</button>
+                    <button type="button" onclick="addToDo()" class="btn btn-primary btn-sm">Zeile hinzufügen</button>
                 </div>
             </div>
 
@@ -189,7 +189,7 @@ function getAddData() {
             <div class="form-group">
                 <div class="col-sm-12 col-12">
 
-                    <button type="submit" id="submit" class="btn btn-primary">Absenden</button>
+                    <button type="submit" id="submit" class="btn btn-primary">Mitarbeiter hinzufügen</button>
                 </div>
             </div>
         </form>
