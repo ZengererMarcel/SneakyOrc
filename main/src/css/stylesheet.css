@@ -78,7 +78,8 @@ body {
     top: 15px;
 }
 
-.btn-default
+
+
 .breadcrumb li:last-of-type a:after {
     content: '';
 }
@@ -103,6 +104,7 @@ body {
     padding-top: 50px;
     text-align: center;
 }
+
 
 .over{
     width: 80%;
