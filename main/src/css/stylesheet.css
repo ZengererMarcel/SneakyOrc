@@ -175,3 +175,16 @@ td, tr {
     font-size: 1rem !important;
     vertical-align: center !important;
 }
+
+
+/* @OverviewList: hide print button on mobile */
+#print-button {
+    display: inline;
+}
+
+@media screen and (max-width: 768px) {
+
+    #print-button {
+        display: none;
+    }
+}
