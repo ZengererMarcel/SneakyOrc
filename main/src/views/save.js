@@ -1,7 +1,11 @@
 function saveValues() {
     return `<!DOCTYPE html>
     <html lang="de">
-    <script>window.open("http://localhost:8080","_self");</script>
+    <a href="/" id="a"></a>
+    <script>
+    window.addEventListener("load", function(){
+        document.getElementById("a").click();
+    });</script>
     </html>`;
 }
 
