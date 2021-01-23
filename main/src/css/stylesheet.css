@@ -78,6 +78,7 @@ body {
     top: 15px;
 }
 
+.btn-default
 .breadcrumb li:last-of-type a:after {
     content: '';
 }
@@ -116,11 +117,11 @@ body {
     text-align: left;
     border-bottom: 3px solid #DA1F37;
     padding-left: 1rem;
-    padding-right: 3rem;
+    padding-right: 1rem;
 }
 
 table {
-    width: 80%;
+    width: 100%;
     margin: 0 auto 0 auto;
     border-collapse: collapse;
 }
