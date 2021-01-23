@@ -40,10 +40,10 @@ If you get the error: `cb() never called` then go to this website:
 
 
 ## Known issues
-Only implemented user stories #1 Overview List and #4 Add Data
+Implemented user stories #1 Overview List, #4 Add Data and #8 Export PDF
 - no actual input validation
-- formatting not ideal
 - need to create database manually
+- not able to print / save files on mobile devices -> removed button
 
 
 ## Developers
