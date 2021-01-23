@@ -96,7 +96,7 @@ function getList(employee) {
                 <br>
                 
                     <div class="over">
-                    <a href="" onclick="printData()" class="btn btn-default"><i class="fa fa-print fa-2x"></i></a>
+                    <a href="" onclick="printData()" class="btn btn-default"  id="print-button"><i class="fa fa-print fa-2x"></i></a>
                     <br>
                         <div style="overflow-x:auto;">
                             <table id="table">

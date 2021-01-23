@@ -62,7 +62,7 @@ function getAddData() {
 
 <nav class="navbar navbar-expand-md navbar-light">
             <a href="/" class="navbar-brand">
-                <img class="logo" src="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/logo_fh_2_color.svg" width="140" height="60" alt="Logo-Fh-Joanneum">
+                <img class="logo" src="https://www.fh-joanneum.at/content/themes/fhjoanneum/assets/images/logo_fh_2_color.svg" width="170" height="100" alt="Logo-Fh-Joanneum">
             </a>
             
                 <ul class="navbar-nav mr-auto">
