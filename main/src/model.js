@@ -107,21 +107,6 @@ function save(employee) {
 }
 
 function makeToDo() {
-    for (var i = 1; i <= toDONumber; i++) {
-        actualToDo = params["toDo" + i];
-
-        if (actualToDo.length > 1) {
-            var copyToDO = "";
-            for (var i = 0; i < actualToDo.length; i++) {
-                if (actualToDo[i] == "+") {
-                    copyToDO = copyToDO + " ";
-                } else {
-                    copyToDO = copyToDO + actualToDo[i];
-                }
-            }
-            params["toDo" + i] = copyToDO;
-        }
-    }
 
     for (let i = 0; i < toDONumber; i++) {
         toDos[i] = params["toDo" + (i + 1)];
@@ -198,6 +183,13 @@ function insertToDo() {
     return new Promise((resolve, reject) => {
         let query =
             "INSERT IGNORE INTO todo (toDo_name) VALUES (?)";
+
+        for(var i = 1; i <= toDONumber; i++){
+            filterString("toDo" + i);
+            toDos[i-1] = params["toDo" + i];
+            console.log(toDos[i-1]);
+        }
+
 
         for (let i = 1; i < toDONumber; i++) {
             query = query + ",(?)";
