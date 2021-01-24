@@ -10,5 +10,5 @@ function printData()
     newWin.document.write(logo.outerHTML);
     newWin.document.write(heading.outerHTML);
     newWin.document.write(divToPrint.outerHTML);
-    newWin.document.write("<script> window.print(); window.close();</script>")
+    newWin.document.write("<script> window.print(); window.close();</script>");
 }

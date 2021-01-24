@@ -17,7 +17,7 @@ function addToDo(){
         input.type = "text";
         input.className = "form-control";
         input.id = `toDo${toDoNumber}`;
-        input.placeholder = "Was muss gemacht werden?"
+        input.placeholder = "Was muss gemacht werden?";
         input.name = `toDo${toDoNumber}`;
         div.appendChild(input);
 
@@ -31,5 +31,4 @@ function addToDo(){
 function setEmail(){
     var email = document.getElementById("firstName").value + "." + document.getElementById("lastName").value + "@web.com";
     document.getElementById("email").value = email;
-    console.log(email)
 }

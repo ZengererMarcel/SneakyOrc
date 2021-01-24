@@ -148,7 +148,7 @@ function createRow(employee) {
 
     var phoneNumber = "0316 50040-" + employee.phone_number;
 
-    var todo = (employee.toDo_name != null) ? employee.toDo_name : "";
+    var todo = (employee.toDo_name !== null) ? employee.toDo_name : "";
 
     return `<tr>
         <td>${employee.first_name}</td>
