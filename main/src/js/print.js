@@ -5,7 +5,7 @@ function printData()
     var logo = document.getElementById("logo");
     var heading = document.getElementById("heading");
 
-    newWin= window.open("");
+    let newWin = window.open("");
     newWin.document.write(head.outerHTML);
     newWin.document.write(logo.outerHTML);
     newWin.document.write(heading.outerHTML);
