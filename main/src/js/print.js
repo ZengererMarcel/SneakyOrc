@@ -24,5 +24,5 @@ function saveAsPdf() {
     newWin.document.write(heading.outerHTML);
     newWin.document.write(divToPrint.outerHTML);
     newWin.document.write("<script src=\"https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js\"></script><script src=\"https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js\"></script>\n");
-    newWin.document.write("<script>const doc = new jsPDF('p','pt',[document.body.scrollHeight, document.body.scrollWidth]);doc.addHTML(document.body, function () {doc.save(\"test.pdf\")});</script>");
+    newWin.document.write("<script>const doc = new jsPDF('p','pt',[document.body.scrollHeight, document.body.scrollWidth]);doc.addHTML(document.body, function () {doc.save(\"OverviewList.pdf\"); window.close();});</script>");
 }
